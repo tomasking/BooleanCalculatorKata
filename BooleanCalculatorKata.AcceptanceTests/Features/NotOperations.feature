@@ -9,5 +9,5 @@ Scenario Outline: Boolean Not Operation
 	Then I should get the following <ExpectedValue>
 Examples:
 	| InputValue | ExpectedValue |
-	| ¬T         | F             |
-	| ¬F         | T             |
+	| NOT TRUE   | false         |
+	| NOT FALSE  | true          |

@@ -56,19 +56,37 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\AndOperations.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AndOperations.feature</DependentUpon>
+    </Compile>
     <Compile Include="Features\NotOperations.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>NotOperations.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\OrOperations.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrOperations.feature</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Steps\BooleanCalculatorSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Features\AndOperations.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AndOperations.feature.cs</LastGenOutput>
+    </None>
     <None Include="Features\NotOperations.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>NotOperations.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\OrOperations.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>OrOperations.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>

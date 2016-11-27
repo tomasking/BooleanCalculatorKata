@@ -56,9 +56,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Spec.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\BooleanCalculatorKata\BooleanCalculatorKata.csproj">
       <Project>{6d4e9c8a-1dcb-4dd9-a868-345f7d369058}</Project>
       <Name>BooleanCalculatorKata</Name>

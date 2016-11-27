@@ -18,21 +18,21 @@ namespace BooleanCalculatorKata.AcceptanceTests.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.1.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("NotOperations")]
-    public partial class NotOperationsFeature
+    [NUnit.Framework.DescriptionAttribute("OrOperations")]
+    public partial class OrOperationsFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "NotOperations.feature"
+#line 1 "OrOperations.feature"
 #line hidden
         
         [NUnit.Framework.TestFixtureSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "NotOperations", "\tIn order to use boolean NOT operations\r\n\tAs a client\r\n\tI want to be able to NOT " +
-                    "a value", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "OrOperations", "\tIn order to use boolean OR operations\r\n\tAs a client\r\n\tI want to be able to OR a " +
+                    "value", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -65,12 +65,14 @@ namespace BooleanCalculatorKata.AcceptanceTests.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Boolean Not Operation")]
-        [NUnit.Framework.TestCaseAttribute("NOT TRUE", "false", new string[0])]
-        [NUnit.Framework.TestCaseAttribute("NOT FALSE", "true", new string[0])]
-        public virtual void BooleanNotOperation(string inputValue, string expectedValue, string[] exampleTags)
+        [NUnit.Framework.DescriptionAttribute("Boolean OR Operation")]
+        [NUnit.Framework.TestCaseAttribute("TRUE OR TRUE", "true", new string[0])]
+        [NUnit.Framework.TestCaseAttribute("TRUE OR FALSE", "true", new string[0])]
+        [NUnit.Framework.TestCaseAttribute("FALSE OR TRUE", "true", new string[0])]
+        [NUnit.Framework.TestCaseAttribute("FALSE OR FALSE", "false", new string[0])]
+        public virtual void BooleanOROperation(string inputValue, string expectedValue, string[] exampleTags)
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Boolean Not Operation", exampleTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Boolean OR Operation", exampleTags);
 #line 6
 this.ScenarioSetup(scenarioInfo);
 #line 7

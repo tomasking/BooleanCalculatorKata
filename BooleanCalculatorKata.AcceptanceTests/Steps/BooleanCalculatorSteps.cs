@@ -29,14 +29,7 @@ namespace BooleanCalculatorKata.AcceptanceTests.Steps
         public void ThenIShouldGetTheFollowing(string expectedValue)
         {
             bool result = bool.Parse(ScenarioContext.Current[ResultKey].ToString());
-            result.Should().Be(ParseAsBool(expectedValue));
-        }
-
-        private bool ParseAsBool(string input)
-        {
-            if (input == "T") return true;
-            if (input == "F") return false;
-            throw new Exception("Unrecognised input ${input}");
+            result.Should().Be(bool.Parse(expectedValue));
         }
     }
 }
