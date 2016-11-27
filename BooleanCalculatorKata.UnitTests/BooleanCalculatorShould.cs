@@ -44,5 +44,12 @@ namespace BooleanCalculatorKata.UnitTests
 
             result.Should().Be(expectedValue);
         }
+
+        public void GiveTheResult_GivenAComplexBooleanInputValue()
+        {
+            var result = booleanCalculator.Calculate("NOT TRUE AND FALSE AND TRUE OR TRUE");
+
+            result.Should().BeTrue();
+        }
     }
 }
